@@ -3,17 +3,18 @@ RegisterCommand('screenshot', function()
 end, false)
 
 function captureScreenshot()
-    exports['screenshot-basic']:requestScreenshotUploadToDiscord('https://discord.com/api/webhooks/your-webhook-url', function(data)
+    exports['screenshot-basic']:requestScreenshotUploadToDiscord(Davis.ImageWebhookSave, function(data)
         local response = json.decode(data)
         if response and response.success and response.url then
-            if Config.Debug then
+            TriggerServerEvent('davis:server:screenshot', source, response.url)
+            
+            if Davis.Debug then
                 print("Screenshot uploaded successfully to Discord!")
                 print("Screenshot URL: " .. response.url)
             end
-            TriggerServerEvent('davis:server:screenshot', response.url)
         else
-            if Config.Debug then
-            print("Failed to upload screenshot to Discord.")
+            if Davis.Debug then
+                print("Failed to upload screenshot to Discord.")
             end
         end
     end)
