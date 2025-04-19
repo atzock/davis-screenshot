@@ -31,4 +31,4 @@ The configuration file is located at `davis-screenshot/config.lua`. You can chan
 
 ## Support
 
-If you have any questions or need help with the resource, feel free to open an issue on the [Discord](https://discord.gg).
+If you have any questions or need help with the resource, feel free to contact me on the [Discord](https://discord.gg/fpdbKbHp7w).
