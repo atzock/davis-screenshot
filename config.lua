@@ -1,20 +1,23 @@
-Davis = {}
+Config = Config or {}
 
-Davis.FinalWebhook = "https://discord.com/api/webhooks/your-webhook-url"
+Config.FinalWebhook = "https://discord.com/api/webhooks/1363528660069519675/J5XxIkwH3xI-fD9iPJw8BKTw2RNTvFuBJhYBnWS5Rc-iTtm9d0O8dL09W-5jJ5HHIGne"
 
-Davis.ImageWebhookSave = 'https://discord.com/api/webhooks/your-webhook-url'
+Config.ImageWebhookSave = 'https://discord.com/api/webhooks/1363528660069519675/J5XxIkwH3xI-fD9iPJw8BKTw2RNTvFuBJhYBnWS5Rc-iTtm9d0O8dL09W-5jJ5HHIGne'
 
-Davis.Language = 'en'
+Config.Debug = false
 
-Davis.Languages = {
+Config.Language = 'en'
+
+Config.Languages = {
     ['en'] = {
         ['new_screenshot'] = "New Screenshot",
         ['footer'] = "Screenshot Service",
-        ['bot_username'] = "Bot"
+        ['bot_username'] = "Screenshot Bot"
     },
     ['de'] = {
         ['new_screenshot'] = "Neuer Screenshot",
         ['footer'] = "Screenshot-Dienst",
-        ['bot_username'] = "Bot"
+        ['bot_username'] = "Screenshot-Bot"
     }
 }
+

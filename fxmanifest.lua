@@ -5,11 +5,13 @@ author 'atzock'
 version '1.0.0'
 
 client_scripts {
-    'client/main.lua',
-    'config.lua'
+    'config.lua',
+    'client/client.lua'
 }
 
 server_scripts {
-    'server/main.lua',
-    'config.lua'
+    '@es_extended/locale.lua',
+    'config.lua',
+    'server/server.lua'
 }
+

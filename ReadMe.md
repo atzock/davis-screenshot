@@ -19,10 +19,10 @@ A simple resource for FiveM that allows players to take and share screenshots wi
 
 The configuration file is located at `davis-screenshot/config.lua`. You can change the following settings:
 
-* `Davis.FinalWebhook`: The Discord webhook URL to send the screenshot to
-* `Davis.ImageWebhookSave`: The Discord webhook URL to send the screenshot to (same as above, but for the image itself)
-* `Davis.Language`: The language to use for the Discord message (en or de)
-* `Davis.Languages`: A table with language-specific strings for the Discord message
+* `Config.FinalWebhook`: The Discord webhook URL to send the screenshot to
+* `Config.ImageWebhookSave`: The Discord webhook URL to send the screenshot to (same as above, but for the image itself)
+* `Config.Language`: The language to use for the Discord message (en or de)
+* `Config.Languages`: A table with language-specific strings for the Discord message
 
 ## Dependencies
 
